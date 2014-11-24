@@ -26,6 +26,11 @@
 	<td> <%= prescription.dosage_with_schedule %> </td>
 	<td> <%= prescription.dates %> </td>
 	<td> <%= prescription.prescribed_by_name %> </td>
+  <td> <%= link_to 'Destroy', @medication,  method: :delete,
+    data: { confirm: 'Are you sure?' },
+    class: 'btn btn-danger' %> </td>
+
+</td>
       </tr>
     <% end %>
   </tbody>
